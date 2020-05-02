@@ -80,7 +80,7 @@ def main():
 				if wheel.land_button == 1:
 					land(drone)
 				if not simulate:
-					drone.move(forward=wheel.accelerator*drone_speed_reducer, backward=wheel.brake*drone_speed_reducer, cw=wheel.angle*drone_speed_reducer,
+					drone.move(forward=wheel.accelerator*drone_speed_reducer, backward=wheel.brake*drone_speed_reducer, cw=wheel.angle,
 					up=wheel.up_paddle*drone_speed_reducer, down=wheel.down_paddle*drone_speed_reducer)
 				print("forward=%.2f backward=%.2f cw=%.2f up=%.2f down=%.2f" % (
 				wheel.accelerator*drone_speed_reducer, wheel.brake*drone_speed_reducer, wheel.angle*drone_speed_reducer,
