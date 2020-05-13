@@ -59,7 +59,7 @@ def main():
 
 	while wheel is None:  # while the wheel has not been set
 		try:
-			wheel = WHeel(joysticks[int(input("Which controller is the wheel?"))-1])
+			wheel = Wheel(joysticks[int(input("Which controller is the wheel?"))-1])
 		except:
 			print("Invalid Input")
 			pass
